@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/lab": "^5.0.0-alpha.168",
+    "@mui/material": "^5.15.13",
     "@reduxjs/toolkit": "^2.2.2",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.6.8",
     "clsx": "^2.1.0",
     "formik": "^2.4.5",
+    "izitoast": "^1.4.0",
     "modern-normalize": "^2.0.0",
     "nanoid": "^5.0.6",
     "react": "^18.2.0",
