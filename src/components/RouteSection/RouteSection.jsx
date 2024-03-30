@@ -4,14 +4,14 @@ import Layout from "../Layout";
 import RestrictedRoute from "../RestrictedRoute";
 import PrivateRoute from "../PrivateRoute";
 
-//pages
+const Home = lazy(() => import("../../pages/Home/Home"));
 
 const RouteSection = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route>Home</Route>
+          <Route index element={<Home />} />
           <Route
             path="/register"
             element={
