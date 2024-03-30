@@ -10,7 +10,16 @@ import AOS from "aos";
 AOS.init();
 
 function App() {
-  return (
+  const dispatch = useDispatch();
+  const { isRefreshing } = useAuth();
+
+  useEffect(() => {
+    dispatch(refreshUser());
+  }, [dispatch]);
+
+  return isRefreshing ? (
+    <LinearProgress />
+  ) : (
     <>
       <RouteSection />
     </>
