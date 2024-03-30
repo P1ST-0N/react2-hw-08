@@ -6,6 +6,10 @@ import PrivateRoute from "../PrivateRoute";
 
 const Home = lazy(() => import("../../pages/Home/Home"));
 
+const NotFoundPage = lazy(() =>
+  import("../../pages/NotFoundPage/NotFoundPage")
+);
+
 const RouteSection = () => {
   return (
     <>
@@ -39,10 +43,7 @@ const RouteSection = () => {
               />
             }
           />
-          <Route
-            path="*"
-            //   element={<NotFoundPage />}
-          />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </>
