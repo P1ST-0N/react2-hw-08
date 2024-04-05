@@ -39,7 +39,7 @@ const RegisterForm = () => {
 
   const handleSubmit = (values, actions) => {
     dispatch(register(values));
-    actions.RegisterForm();
+    actions.resetForm();
   };
 
   const handleClick = () => {
