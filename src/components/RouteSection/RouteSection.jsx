@@ -7,6 +7,7 @@ import PrivateRoute from "../PrivateRoute";
 const Home = lazy(() => import("../../pages/Home/Home"));
 const Register = lazy(() => import("../../pages/Register"));
 const Login = lazy(() => import("../../pages/Login"));
+const Contacts = lazy(() => import("../../pages/Contacts/Contacts"));
 
 const NotFoundPage = lazy(() =>
   import("../../pages/NotFoundPage/NotFoundPage")
@@ -36,10 +37,7 @@ const RouteSection = () => {
           <Route
             path="/contacts"
             element={
-              <PrivateRoute
-                redirectTo="/login"
-                //   component={<Contacts />}
-              />
+              <PrivateRoute redirectTo="/login" component={<Contacts />} />
             }
           />
           <Route path="*" element={<NotFoundPage />} />
