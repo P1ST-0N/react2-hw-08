@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import TitleDocument from "../../components/TitleDocument";
 import ContactList from "../../components/ContactList/ContactList";
-// import ContactForm
+import ContactForm from "../../components/ContactForm/ContactForm";
 // import SearchBox
 import style from "./Contacts.module.css";
 
@@ -21,7 +21,7 @@ const Contacts = () => {
         <div className={style.bgImgContacts}></div>
         <TitleDocument>Your contacts page</TitleDocument>
         <div className={style.positionSection}>
-          {/* <ContactForm /> */}
+          <ContactForm />
           {/* <SearchBox /> */}
           <ContactList />
         </div>
