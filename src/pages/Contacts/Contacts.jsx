@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import TitleDocument from "../../components/TitleDocument";
 import ContactList from "../../components/ContactList/ContactList";
 import ContactForm from "../../components/ContactForm/ContactForm";
-// import SearchBox
+import SearchBox from "../../components/SearchBox/SearchBox";
 import style from "./Contacts.module.css";
 
 import { fetchContacts } from "../../redux/contacts/contactsOps";
@@ -22,7 +22,7 @@ const Contacts = () => {
         <TitleDocument>Your contacts page</TitleDocument>
         <div className={style.positionSection}>
           <ContactForm />
-          {/* <SearchBox /> */}
+          <SearchBox />
           <ContactList />
         </div>
       </section>
